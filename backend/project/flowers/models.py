@@ -6,6 +6,7 @@ class Flower(models.Model):
     price = models.IntegerField()
     color = models.CharField(max_length=100)
     stock = models.PositiveIntegerField(default=0)
+    photo = models.ImageField()
 
     def __str__(self):
         return f"{self.sort} ({self.color})"
